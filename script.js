@@ -23,7 +23,8 @@ function revelarTexto() {
         'padrinho': "Aceita ser nosso Padrinho?",
         'madrinha': "Aceita ser nossa Madrinha?",
         'dama': "Aceita ser nossa Dama?",
-        'pajem': "Aceita ser nosso Pajem?"
+        'pajem': "Aceita ser nosso Pajem?",
+        'casal_padrinho': "Aceitam ser nossos Padrinhos?" 
     };
     
     const textoCompleto = frases[tipo] || "Aceita ser nosso convidado especial?";
