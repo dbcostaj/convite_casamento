@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Convite Daiane & David</title>
+</head>
+<body>
+    <!-- Galeria de fundo (fotos que se alternam) -->
+    <div class="galeria-fundo">
+        <div class="foto-fundo" style="background-image: url('foto1.jpg'); animation-delay: 0s;"></div>
+        <div class="foto-fundo" style="background-image: url('foto2.jpg'); animation-delay: 6s;"></div>
+        <div class="foto-fundo" style="background-image: url('foto3.jpg'); animation-delay: 12s;"></div>
+        <div class="foto-fundo" style="background-image: url('foto4.jpg'); animation-delay: 18s;"></div>
+        <div class="foto-fundo" style="background-image: url('foto5.jpg'); animation-delay: 24s;"></div>
+        <div class="foto-fundo" style="background-image: url('foto6.jpg'); animation-delay: 30s;"></div>
+    </div>
+
+    <!-- Tela Inicial (pequena) -->
+    <div id="loader" class="tela-entrada">
+        <h1 class="titulo-principal">Daiane & David</h1>
+        <button class="btn" onclick="iniciarTudo()">Abrir Convite</button>
+    </div>
+
+    <!-- Convite (maior) -->
+    <div class="convite-box" id="convite" style="display: none;">
+        <div id="conteudo-convite">
+            <h1 class="titulo-principal">Daiane & David</h1>
+            <div class="data">21 de Novembro de 2026</div>
+            <p id="mensagem-personalizada"></p>
+            <div class="pergunta" id="pergunta-convite"></div>
+            <button class="btn" onclick="confirmarPresenca()">Sim, aceito!</button>
+        </div>
+
+        <div id="popup-agradecimento" class="hidden">
+            <h2>Que alegria!</h2>
+            <p>Ficamos muito felizes com a sua resposta. Mal podemos esperar pelo grande dia!</p>
+            <button class="btn" onclick="irParaWhatsApp()">Confirmar no WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
