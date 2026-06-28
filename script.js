@@ -40,7 +40,7 @@ function revelarTexto() {
     el.textContent = "";
 
     const totalChars = textoCompleto.length;
-    const intervalo = Math.floor(30000 / totalChars); // 30 segundos
+    const intervalo = Math.floor(20000 / totalChars); // 20 segundos
 
     const typing = setInterval(() => {
         el.textContent += textoCompleto[i];
